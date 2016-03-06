@@ -1,7 +1,6 @@
 # SWF Format Switcher
 
 This script can be used to change one flash format to other format.
-
 for example, flash (swf) have three signatures such as FWS, CWS and ZWS
 
 FWS means there is no compression used in the flash file
@@ -22,13 +21,13 @@ FWS:
     frame Rate      : 2 bytes
     frame Count     : 2 bytes
     Tags            : n bytes
-
+    
 CWS:
     signature       : 3 bytes
     version         : 1 byte
     fileSize        : 4 bytes
     Zlib Data       : n bytes
-
+    
 ZWS:
     signature       : 3 bytes
     version         : 1 byte
@@ -37,9 +36,8 @@ ZWS:
     LZMA Props      : 5 bytes
     LZMA Data       : n bytes
     LZMA end marker : 6 bytes
-
+    
 this script is capable of giving you file in different format
-
 You will be able to switch from ZWS to FWS or CWS, FWS to CWS or ZWS and CWS to FWS or ZWS.
 
 Requirements:
